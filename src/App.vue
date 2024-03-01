@@ -1,15 +1,16 @@
 <template>
-  <Customer />
+  <div id="app">
+    <nav>
+      <router-link to="/customer">Customer</router-link> |
+      <router-link to="/customerform">Customer Form</router-link>
+    </nav>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import Customer from "./components/Customer.vue";
-
 export default {
   name: "App",
-  components: {
-    Customer,
-  },
 };
 </script>
 
